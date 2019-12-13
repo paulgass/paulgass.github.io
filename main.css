@@ -1,0 +1,28 @@
+* {
+    margin: 0px;
+}
+.header {
+    text-align: center;
+    width: 100%;
+    color: #000000;
+}
+.footer {
+    text-align: center;
+    width: 100%;
+    color: #000000;
+}
+#pythagorean {
+    color: #0000FF
+}
+body {
+    margin: 25px;
+    background-color: rgb(235, 235, 235);
+    font-family: arial, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+h1 {
+    font-size: 35px;
+    font-weight: normal;
+    margin-top: 5px;
+}
