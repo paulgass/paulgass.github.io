@@ -7,6 +7,10 @@ var main = function() {
     var num2 = x("inBox2").value;
     var answer = Math.sqrt(Math.pow(num1, 2) + Math.pow(num2, 2));
 
+    console.log("Hello")
+    console.log(jQuery().jquery);
+    console.log("World")
+
     if (this.id == "btn1") {
         x("outDiv").innerHTML = answer;
     };
