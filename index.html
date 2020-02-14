@@ -15,6 +15,34 @@
         <h1>Hola Tierra</h1>
         <p>what a time to be alive<p>
     </div>
+    <br>
+    <br>
+    <div class="footer">
+        <table>
+            <tr>
+                <td><a href="index.html" class="active">HTML</a></td>
+                <td><a href="HTML/JQUERY/jQuery.html">jQuery</a></td>
+                <td><a href="HTML/BOOTSTRAP/Bootstrap.html">Bootstrap</a></td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <table>
+        <tr>
+            <td><h2>My Cloud Services</h2></td>
+        </tr>
+        <tr>
+            <td><h3><a href="https://paulgass.com">paulgass.com</a></h3></td>
+            <td><h3><a href="https://nataliegass.com">nataliegass.com</a></h3></td>
+            <td><h3><a href="http://3.15.222.134:8000/swagger/">Python Django MongoDB AWS</a></h3></td>
+            <td><h3><a href="https://github.com/paulgass">GitHub.com/paulgass</a></h3></td>
+            <td><h3><a href="https://hub.docker.com/u/paulgass">Hub.Docker.com/u/paulgass</a></h3></td>
+            <td><h3><a href="https://www.kaggle.com/paulgass">Kaggle.com/paulgass</a></h3></td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
     <h2>Button Example</h2>
     <p id="pythagorean">Calculate Pythagorean Theorem</p>
     Side 1: <input type="text" id="inBox1">
@@ -29,10 +57,21 @@
     <hr>
     <br>
     <br>
-    <br>
+    <div>
+    </div>
     <div class="first">
         <h1>Paul Gass Tech Reference 2020</h1>
-        <h2>Apple</h2>
+        <h3>Topics</h3>
+        <table>
+            <tr>
+                <td><a href=#Linux>Linux</a></td>
+                <td><a href=#macOS>macOS</a></td>
+                <td><a href=#Windows>Windows</a></td>
+                <td><a href=#Docker>Docker</a></td>
+                <td><a href=#Python>Python</a></td>
+            </tr>
+        </table>
+        <h2 id="macOS">macOS</h2>
         <h3>Python (Steps to Perform Immediately After Fresh Install of macOS X)</h3> 
         <h4>Update macOS by clicking Apple Logo -> About This Mac -> Software Update</h4>
         <br>
@@ -116,6 +155,9 @@
         <br>
         <h5>export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"</h5>
         <br>
+        <br>
+        <h2 id="Linux">Linux</h2>
+        <br>
         <h4>SSH - Remote</h4>
         <h4>Remote</h4>
         <h5>ssh user@X.X.X.X</h5>
@@ -138,8 +180,6 @@
         <h5>sudo git config --global user.email "paul.gass@spathesystems.com"</h5>
         <h5>sudo git config --global user.name "Paul Gass"</h5>
         <br>
-        <h2>Linux</h2>
-        <br>
         <h4>ExFAT Compatibility</h4>
         <h5>apt-get install exfat-fuse exfat-utils -y</h5>
         <br>
@@ -154,7 +194,7 @@
         <h4>Visual Studio Code</h4>
         <h5>snap install code --classic</h5>
         <br>
-        <h4>Python</h4>
+        <h4 id="Python">Python</h4>
         <h5>apt-get update -y</h5>
         <h5>apt-get upgrade -y</h5>
         <h5>apt update -y</h5>
@@ -192,7 +232,7 @@
         <h4>Sudo Permissions</h4>
         <h5>adduser paulgass sudo</h5>
         <br>
-        <h4>Docker $USER Permissions</h4>
+        <h4 id="Docker">Docker $USER Permissions</h4>
         <h5>sudo apt install docker.io -y</h5>
         <h5>#docker --version</h5>
         <h5>#sudo groupadd docker</h5>
@@ -211,7 +251,7 @@
         <h4>FolderPermissions</h4>
         <h5>sudo chmod -R 777 alpha-folder/</h5>
         <br>
-        <h2>Windows</h2>
+        <h2 id="Windows">Windows</h2>
         <br>
         <h4>PATH</h4>
         <h4>Windows Key + R</h4>

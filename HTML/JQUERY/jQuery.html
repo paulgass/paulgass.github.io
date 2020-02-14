@@ -9,6 +9,12 @@
     ...THIS WORKS LOCALLY AND UPON GITHUB.IO DEPLOY... 
     <script src="../../PACKAGES/JQUERY/jQuery1"></script>
     -->
+	<script Language="JavaScript" Type="text/javascript">
+            function calculateNumber(frm){
+                var userInput = parseInt(frm.userInput.value);
+                frm.computerOutput.value = ((1+userInput)*(userInput/2))
+            }
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 </head>
@@ -22,10 +28,21 @@
     Side 1: <input type="text" id="inBox1">
     Side 2: <input type="text" id="inBox2">
     <br>
-    <button id="btn1">Calulate a^(2) + b^(2)</button>
+    <button id="btn1">Calculate a^(2) + b^(2)</button>
     <br>
-    <hr>
     <div id="outDiv"></div>
+    <br>
+    <br>
+    <h2>Another Example</h2>
+    <form name = "sum" action = ""> 
+    <p>jQuery Web Browser Console Log</p>
+    Enter A Number: <input type="text" id="inBox3">
+    <br>
+    <button id="btn2" onclick="calculateNumber(this.form)">Calculate [(1+x)*(x/2)]</button>
+    <br>
+    </form>
+    <div id="outDiv2"></div>
+    <hr>
     <script src="../../JS/JQUERY/jQuery.js"></script>
     <hr>
     <div class="footer">
