@@ -90,7 +90,7 @@
         <br>
         <h4>* OS X utilizes the Security framework to manage and handle SSL certificates, so you need to Right Click each .pem to Open With Keychain Access, and then you need to Trust these certificates by Double Clicking the certifications (in Keychain Access) and change the Trust setting to Always Trust (for all 4 certificates). Then run the following command:</h4>
         <br>
-        <h5>pip config set global.trusted-host nexus.secret.com:8443</h5>
+        <h5>pip config set global.trusted-host nexus.example.com:8443</h5>
         <br>
         <h4>Bash to ZSH</h4>
         <h5>chsh -s /bin/zsh</h5>
@@ -145,7 +145,7 @@
         <br>
         <h4>Snap Store</h4>
         <h5>apt install snapd -y</h5>
-        <h5>echo “export PATH=$PATH:/snap/bin” >> ~/etc/bash.bashrc</h5>
+        <h5>echo “export PATH=$PATH:/snap/bin” >> /etc/bash.bashrc</h5>
         <h5>snap install code --classic</h5>
         <br>
         <h4>Screen Resoultion</h4>
