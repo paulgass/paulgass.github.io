@@ -69,6 +69,7 @@
                 <td><a href=#Windows>Windows</a></td>
                 <td><a href=#Docker>Docker</a></td>
                 <td><a href=#Python>Python</a></td>
+                <td><a href=#Python>RaspberryPi</a></td>
             </tr>
         </table>
         <h2 id="macOS">macOS</h2>
@@ -304,6 +305,17 @@
         <h6>To exit the container, run the following command</h6>
         <br>
         <h5>\q</h5>
+        <br>
+        <h4 id="RaspberryPi">Raspberry Pi</h4>
+        <h5>sudo apt install openssh-server -y</h5>
+        <h5>sudo apt-get install ufw -y</h5>
+        <h5>sudo ufw allow ssh</h5>
+        <h5>touch $HOME/ssh</h5>
+        <h5>sudo systemctl restart ssh</h5>
+        <h5>sudo systemctl status ssh</h5>
+        <h5>ifconfig</h5>
+        <h5>hostname -I</h5>
+        <h5>sudo nano /etc/wpa_supplicant/wpa_supplicant.conf</h5>
     </div>
     <br>
     <br>
