@@ -1,21 +1,20 @@
-var x = function(idStr) {
-    return document.getElementById(idStr);
-};
-
-var main = function() {
-    var num1 = x("inBox1").value;
-    var num2 = x("inBox2").value;
-    var answer = Math.sqrt(Math.pow(num1, 2) + Math.pow(num2, 2));
-
-    console.log("Hello")
-    console.log(jQuery().jquery);
-    console.log("World")
-
-    if (this.id == "btn1") {
-        x("outDiv").innerHTML = answer;
-    };
-};
-
-window.onload = function() {
-    x("btn1").addEventListener("click", main);
-};
+$(document).ready(function(){
+    $("h1").text("Hello jQuery World!");
+});
+$(document).ready(function(){
+    $("button").click(function(){
+        var newHeading = "<h1>Hungry?</h1>";
+        var newParagraph = document.createElement("p");
+		newParagraph.innerHTML = "<em>Bon appétit</em>";
+        var newImage = $('<img src="../../IMAGES/shrimp.png" alt="Symbol">');
+        $("#jQueryImageDisplay").append(newHeading, newParagraph, newImage);
+    });
+});
+$(document).ready(function(){
+	$('.showbtn').click(function(){
+   		$('.myimgdivshowhide').show();
+	});
+  	$('.hidebtn').click(function(){
+   		$('.myimgdivshowhide').hide();
+	});
+});

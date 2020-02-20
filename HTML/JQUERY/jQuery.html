@@ -9,41 +9,35 @@
     ...THIS WORKS LOCALLY AND UPON GITHUB.IO DEPLOY... 
     <script src="../../PACKAGES/JQUERY/jQuery1"></script>
     -->
-	<script Language="JavaScript" Type="text/javascript">
-            function calculateNumber(frm){
-                var userInput = parseInt(frm.userInput.value);
-                frm.computerOutput.value = ((1+userInput)*(userInput/2))
-            }
-    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="../../JS/JQUERY/jQuery.js"></script>
 </head>
 <body>
     <div class="header">
-        <h1>Hola Tierra</h1>
+        <p id="title">Hola Tierra</p>
         <p>what a time to be alive<p>
     </div>
-    <h2>Button Example</h2>
-    <p id="pythagorean">Calculate Pythagorean Theorem</p>
-    Side 1: <input type="text" id="inBox1">
-    Side 2: <input type="text" id="inBox2">
     <br>
-    <button id="btn1">Calculate a^(2) + b^(2)</button>
-    <br>
-    <div id="outDiv"></div>
+    <h1>jQuery Hello World</h1>
     <br>
     <br>
-    <h2>Another Example</h2>
-    <form name = "sum" action = ""> 
-    <p>jQuery Web Browser Console Log</p>
-    Enter A Number: <input type="text" id="inBox3">
     <br>
-    <button id="btn2" onclick="calculateNumber(this.form)">Calculate [(1+x)*(x/2)]</button>
+    <div id="jQueryImageDisplay">
+        <button type="button">jQuery Button</button>
+    </div>
     <br>
-    </form>
-    <div id="outDiv2"></div>
-    <hr>
-    <script src="../../JS/JQUERY/jQuery.js"></script>
+    <br>
+    <br>
+    <br>
+    <h2>jQuery Display Image on Button Click</h2>
+    <div class="myimgdivshowhide">
+        <img src="../../IMAGES/gecko.png" alt="display image on button click" class="img-responsive img-thumbnail"/>
+    </div>
+    <button type="button" class="showbtn">Show Image</button>  
+    <button type="button" class="hidebtn">Hide Image</button>
+    <br>
+    <br>
     <hr>
     <div class="footer">
         <p>que tiempo para estar vivo</p>
