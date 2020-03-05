@@ -321,7 +321,22 @@
         <br>
         <h5>\q</h5>
         <br>
-        <h4 id="RaspberryPi">Raspberry Pi</h4>
+        <h4 id="RaspberryPi">Raspberry Pi</h4>  
+        <h4>Pi Camera</h4>
+        <h5>apt install vlc -y</h5>
+        <br>
+        <h5>raspivid -o - -t 0 -hf -vf -w 1080 -h 768 -fps 20 | cvlc -vvv stream:///dev/stdin --sout '#standard{access=http,mux=ts,dst=:8160}' :demux=h264</h5>
+        <br>
+        <h4>wpa_supplicant.conf Example</h4>
+        <h6>country=US</h6>
+        <h6>ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev</h6>
+        <h6>update_config=1</h6>
+        <h6>network={</h6>
+        <h6>    ssid="homenetwork"</h6>
+        <h6>    psk="password"</h6>
+        <h6>    key_mgmt=WPA-PSK</h6>
+        <h6>}</h6>
+        <br>
         <h5>sudo apt install openssh-server -y</h5>
         <h5>sudo apt-get install ufw -y</h5>
         <h5>sudo ufw allow ssh</h5>
