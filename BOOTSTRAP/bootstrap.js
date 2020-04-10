@@ -1,53 +1,21 @@
-/* globals Chart:false, feather:false */
-
-(function () {
-    'use strict'
-  
-    feather.replace()
-  
-    // Graphs
-    var ctx = document.getElementById('myChart')
-    // eslint-disable-next-line no-unused-vars
-    var myChart = new Chart(ctx, {
+function renderChart(data, labels) {
+  var ctx = document.getElementById("myChart").getContext('2d');
+  var myChart = new Chart(ctx, {
       type: 'line',
       data: {
-        labels: [
-          'Sunday',
-          'Monday',
-          'Tuesday',
-          'Wednesday',
-          'Thursday',
-          'Friday',
-          'Saturday'
-        ],
-        datasets: [{
-          data: [
-            15339,
-            21345,
-            18483,
-            24003,
-            23489,
-            24092,
-            12034
-          ],
-          lineTension: 0,
-          backgroundColor: 'transparent',
-          borderColor: '#007bff',
-          borderWidth: 4,
-          pointBackgroundColor: '#007bff'
-        }]
-      },
-      options: {
-        scales: {
-          yAxes: [{
-            ticks: {
-              beginAtZero: false
-            }
+          labels: labels,
+          datasets: [{
+              label: 'This week',
+              data: data,
           }]
-        },
-        legend: {
-          display: false
-        }
-      }
-    })
-  })
+      },
+  });
+}
+
+$("#renderBtn").click(
+  function () {
+      data = [20000, 14000, 12000, 15000, 18000, 19000, 22000];
+      labels =  ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
+      renderChart(data, labels);
+  }
+);
