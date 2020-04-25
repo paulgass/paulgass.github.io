@@ -320,6 +320,9 @@
         <br>
         <h5>raspivid -o - -t 0 -hf -vf -w 1080 -h 768 -fps 20 | cvlc -vvv stream:///dev/stdin --sout '#standard{access=http,mux=ts,dst=:8160}' :demux=h264</h5>
         <br>
+        <h4>Enable 4K Video</h4>
+        <h5>You must also enable 4Kp60 output by setting the hdmi_enable_4kp60=1 flag in config.txt.</h5>
+        <br>
         <h4>wpa_supplicant.conf Example</h4>
         <hr>
         <h6>ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev</h6>
