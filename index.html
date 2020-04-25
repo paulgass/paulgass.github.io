@@ -86,7 +86,7 @@
         <br>
         <h4>How To View IP Addresses On Your Network</h4>
         <h5>arp -a</h5>
-	<br>
+        <br>
         <h4>Sublime Text</h4>
         <h5>cp /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin</h5>
         <h5>subl --help</h5>
@@ -147,7 +147,7 @@
         <h5>ssh -i /path/to/.pem user@X.X.X.X</h5>
         <br>
         <h4>SSH - Generate Key</h4>
-        <h5>ssh-keygen -t ed25519 -C "paulm.gass@gmail.com"</h5>
+        <h5>ssh-keygen -t ed25519 -C “paulm.gass@gmail.com”</h5>
         <h5>ssh-keygen -o -t rsa -b 4096 -C "paul.gass@spathesystems.com"</h5>
         <br>
         <h5>sudo cp /home/paulgass/.ssh/id_ed25519 /root/.ssh/</h5>
@@ -197,16 +197,16 @@
         <h5>source /etc/bash.bashrc</h5>
         <h5>pip install pipenv</h5>
         <br>
-	<h4>How To Generate requirements.txt with each pypi dependency locked down to its specific version.</h4>
-	<h5>Pipenv</h5>
-	<h6>cd yourProjectFolder/</h6>
-	<h6>pipenv shell</h6>
-	<h6>pipenv lock -r >> requirements.txt</h6>
+        <h4>How To Generate requirements.txt with each pypi dependency locked down to its specific version.</h4>
+        <h5>Pipenv</h5>
+        <h6>cd yourProjectFolder/</h6>
+        <h6>pipenv shell</h6>
+        <h6>pipenv lock -r >> requirements.txt</h6>
         <h5>Virtualenv</h5>
         <h6>cd yourProjectFolder/</h6>
         <h6>source yourVirtualenvFolder/bin/activate</h6>
         <h6>pip freeze >> requirements.txt</h6>
-	<br>
+        <br>
         <h4>SSH - Allow Incoming Connections</h4>
         <h4>Host</h4>
         <h5>sudo apt update</h5>
@@ -254,9 +254,9 @@
         <br>
         <h4>Enter Command inside of a Docker Container</h4>
         <h5>docker exec -it <container name> <command></h5>
-	<h4>Enter Terminal inside of a Docker Container</h4>
-	<h5>docker exec -it <container name> /bin/bash</h5>
-	<br>
+        <h4>Enter Terminal inside of a Docker Container</h4>
+        <h5>docker exec -it <container name> /bin/bash</h5>
+        <br>
         <h4>FolderPermissions</h4>
         <h5>sudo chmod -R 777 alpha-folder/</h5>
         <br>
@@ -321,14 +321,43 @@
         <h5>raspivid -o - -t 0 -hf -vf -w 1080 -h 768 -fps 20 | cvlc -vvv stream:///dev/stdin --sout '#standard{access=http,mux=ts,dst=:8160}' :demux=h264</h5>
         <br>
         <h4>wpa_supplicant.conf Example</h4>
-        <h6>country=US</h6>
+        <hr>
         <h6>ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev</h6>
         <h6>update_config=1</h6>
+        <h6>country=US</h6>
+        <br>
         <h6>network={</h6>
-        <h6>    ssid="homenetwork"</h6>
-        <h6>    psk="password"</h6>
+        <h6>    ssid="SecretNetworkName"</h6>
+        <h6>    scan_ssid=1</h6>
+        <h6>    psk="SecretNetworkPassword"</h6>
         <h6>    key_mgmt=WPA-PSK</h6>
         <h6>}</h6>
+        <hr>
+        <br>
+        <h4>wpa_supplicant.conf Example (Multiple Networks)</h4>
+        <hr>
+        <h6>ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev</h6>
+        <h6>update_config=1</h6>
+        <h6>country=US</h6>
+        <br>
+        <h6>network={</h6>
+        <h6>    ssid="SecretNetwork1Name"</h6>
+        <h6>    scan_ssid=1</h6>
+        <h6>    psk="SecretNetwork1Password"</h6>
+        <h6>    key_mgmt=WPA-PSK</h6>
+        <h6>    priority=1</h6>
+        <h6>    id_str="workMain"</h6>
+        <h6>}</h6>
+        <br>
+        <h6>network={</h6>
+        <h6>    ssid="SecretNetwork2Name"</h6>
+        <h6>    scan_ssid=1</h6>
+        <h6>    psk="SecretNetwork2Password"</h6>
+        <h6>    key_mgmt=WPA-PSK</h6>
+        <h6>    priority=2</h6>
+        <h6>    id_str="workGuest"</h6>
+        <h6>}</h6>
+        <hr>
         <br>
         <h5>sudo apt install openssh-server -y</h5>
         <h5>sudo apt-get install ufw -y</h5>
