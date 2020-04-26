@@ -257,6 +257,9 @@
         <h4>Enter Terminal inside of a Docker Container</h4>
         <h5>docker exec -it <container name> /bin/bash</h5>
         <br>
+        <h4>Docker remove all images</h4>
+        <h5>docker rmi -f $(docker images -a -q)</h5>
+        <br>
         <h4>FolderPermissions</h4>
         <h5>sudo chmod -R 777 alpha-folder/</h5>
         <br>
