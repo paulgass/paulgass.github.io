@@ -247,6 +247,16 @@
         <h5>#sudo service docker restart</h5>
         <h5>#systemctl restart docker</h5>
         <br>
+        <h4> (ALTERNATIVE FOR WINDOWS)</h4>
+        <h6>On Windows, the group is called docker-users. To add a user from the Administrator command prompt, run the following command:
+        <br>
+        <h5>net localgroup docker-users DOMAIN\USERNAME /add</h5>
+        <br>
+        <h6>Where</h6>
+        <br>
+        <h4>DOMAIN is your Windows domain.</h4>
+        <h4>USERNAME is your user name.</h4>
+        <br>
         <h5>docker login</h5>
         <h5>docker tag local_image:local_image_tag paulgass/repository_name:tag_name_for_hub</h5>
         <h5>docker push paulgass/repository_name:tag_name_for_hub</h5>
