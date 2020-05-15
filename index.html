@@ -63,6 +63,7 @@
                 <td><a href=#Docker>Docker</a></td>
                 <td><a href=#Python>Python</a></td>
                 <td><a href=#RaspberryPi>RaspberryPi</a></td>
+                <td><a href=#sudo>Sudo Privledges</a></td>
             </tr>
         </table>
         <h2 id="macOS">macOS</h2>
@@ -244,8 +245,21 @@
         <h5>tar -xzvf cli.tar</h5>
         <h5>mv cli/oc /usr/bin</h5> 
         <br>
-        <h4>Sudo Permissions</h4>
+        <h4 id="sudo"></h4>>Sudo Permissions</h4>
+        <h4>Debian/Ubuntu</h4>
         <h5>adduser paulgass sudo</h5>
+        <br>
+        <h4>Centos</h4>
+        <h5>usermod -aG wheel paulgass</h5>
+        <h6>OR</h6>
+        <h4>Use text editor to Add user to end of file /etc/sudoers</h4>
+        <h5>paulgass  ALL=(ALL) NOPASSWD:ALL</h5>
+        <h6>OR</h6>
+        <h4>Use text editor to Add user with limited privledges for commands to end of file /etc/sudoers</h4>
+        <h5>paulgass  ALL=(ALL) NOPASSWD:/usr/bin/du,/usr/bin/ping</h5>
+        <h6>OR</h6>
+        <h4>Add user to end of file /etc/sudoers.d</h4>
+        <h5>echo "paulgass  ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/paulgass</h5>
         <br>
         <h4 id="Docker">Docker $USER Permissions</h4>
         <h5>sudo apt install docker.io -y</h5>
