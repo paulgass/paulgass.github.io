@@ -252,13 +252,13 @@
         <h4>Centos</h4>
         <h5>usermod -aG wheel paulgass</h5>
         <h6>OR</h6>
-        <h6>Use text editor to Add user to end of file <strong>/etc/sudoers</strong></h6>
+        <h6>Use text editor to Add user to end of file /etc/sudoers</h6>
         <h5>paulgass  ALL=(ALL) NOPASSWD:ALL</h5>
         <h6>OR</h6>
-        <h6>Use text editor to Add user with limited privledges for commands to end of file <strong>/etc/sudoers</strong></h6>
+        <h6>Use text editor to Add user with limited privledges for the commands du AND ping to end of file /etc/sudoers</h6>
         <h5>paulgass  ALL=(ALL) NOPASSWD:/usr/bin/du,/usr/bin/ping</h5>
         <h6>OR</h6>
-        <h6>Use following command to Add user to end of file <strong>/etc/sudoers.d</strong></h6>
+        <h6>Use following command to Add user to end of file /etc/sudoers.d</h6>
         <h5>echo "paulgass  ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/paulgass</h5>
         <br>
         <h4 id="Docker">Docker $USER Permissions</h4>
