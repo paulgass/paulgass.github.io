@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PAUL GASS</title>
+    <link rel="stylesheet" type="text/css" href="vj.css">
+    <!--VUEJS-->
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- production version, optimized for size and speed -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+</head>
+<body>
+    <h2>VueJS</h2>
+    <br>
+    
+    <h3>Recipe - Vuejs</h3>
+    <div id="Vue">
+      <label for="serving">Portions :</label>
+      <input type="number" v-model.number="serving">
+      <button @click="decreaseServing">-</button>
+      <button @click="increaseServing">+</button>
+    
+      <div class="Recipe-IngredientList">
+        <div class="Recipe-Ingredient">Farine : <span>{{ serving * 100 }}</span>g</div>
+        <div class="Recipe-Ingredient">Oeuf : <span>{{ serving * 2 }}</span></div>
+        <div class="Recipe-Ingredient">Lait : <span>{{ serving * 150 }}</span>mL</div>
+        <div class="Recipe-Ingredient">Lardon : <span>{{ serving * 50 }}</span>g</div>
+      </div>
+    </div>
+    <script src="vj.js"></script>
+</body>
