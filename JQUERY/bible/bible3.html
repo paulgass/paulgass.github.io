@@ -7,8 +7,12 @@
 		$.getJSON("en_kjv.json", function(json) {
 			$('#jsonTable').css("visibility", "visible").css("border", "1px solid green");
 			$('#jsonTable').append("<tbody>");
-			for (var counter = 0; counter < json.length; counter++) {
-				$('#jsonTable').append("<tr><td>" + json[counter].abbrev + "</td><td>" + json[counter].name + "</td></tr>");
+			for (var book = 0; book < json.length; book++) {
+                for (var chapter = 0; chapter < json[book].chapters.length; chapter++) {
+                    for (var verse = 0; verse < json[book].chapters[chapter].length; verse++) {
+                        $('#jsonTable').append("<tr><td>" + json[book].abbrev + "</td><td>" + json[book].name + "</td><td>" + chapter + "</td><td>" + verse + "</td><td>" + json[book].chapters[chapter][verse] + "</td></tr>");
+                    }
+                }
 			}
 			$('#jsonTable').append("</tbody>");
 			$('th').css("border", "1px solid green");
@@ -26,6 +30,9 @@
 				<!-- The JSON downloaded from the URL above provides four attributes.-->
 				<th>abbrev</th>
 				<th>name</th>
+				<th>chapter number</th>
+				<th>verse number</th>
+				<th>verse text</th>
 			</tr>
 		</thead>
 	</table>
