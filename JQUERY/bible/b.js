@@ -1,9 +1,3 @@
-console.log("helloluluworld")
-$.ajax({
-    url: "https://nataliegass.com/assets/json/nk.json",
-    dataType: 'json',
-    success: function(results){
-        console.log(results);
-    }
+$.getJSON("en_kjv.json", function(json) {
+    console.log(json); // this will show the info it in firebug console
 });
-console.log("hellobenzieworld")
