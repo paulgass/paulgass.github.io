@@ -4,11 +4,11 @@
 <script type="text/javascript">
 	function hello() {
 		//
-		$.getJSON("https://jsonplaceholder.typicode.com/posts/", function(json) {
+		$.getJSON("en_kjv.json", function(json) {
 			$('#jsonTable').css("visibility", "visible").css("border", "1px solid green");
 			$('#jsonTable').append("<tbody>");
 			for (var counter = 0; counter < json.length; counter++) {
-				$('#jsonTable').append("<tr><td>" + json[counter].id + "</td><td>" + json[counter].userId + "</td><td>" + json[counter].title + "</td><td>" + json[counter].body + "</td></tr>");
+				$('#jsonTable').append("<tr><td>" + json[counter].abbrev + "</td><td>" + json[counter].name + "</td></tr>");
 			}
 			$('#jsonTable').append("</tbody>");
 			$('th').css("border", "1px solid green");
@@ -24,10 +24,8 @@
 		<thead>
 			<tr>
 				<!-- The JSON downloaded from the URL above provides four attributes.-->
-				<th>id</th>
-				<th>userId</th>
-				<th>title</th>
-				<th>body</th>
+				<th>abbrev</th>
+				<th>name</th>
 			</tr>
 		</thead>
 	</table>
