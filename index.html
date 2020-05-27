@@ -257,8 +257,8 @@
         <h6>Use text editor to Add user to end of file /etc/sudoers</h6>
         <h5>paulgass  ALL=(ALL) NOPASSWD:ALL</h5>
         <h6>OR</h6>
-        <h6>Use text editor to Add user with limited privledges for the commands du AND ping to end of file /etc/sudoers</h6>
-        <h5>paulgass  ALL=(ALL) NOPASSWD:/usr/bin/du,/usr/bin/ping</h5>
+        <h6>Use text editor to Add user with limited privledges for the commands mkdir AND rmdir to end of file /etc/sudoers</h6>
+        <h5>paulgass  ALL=(ALL) NOPASSWD:/bin/mkdir,/bin/rmdir</h5>
         <h6>OR</h6>
         <h6>Use following command to Add user to end of file /etc/sudoers.d</h6>
         <h5>echo "paulgass  ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/paulgass</h5>
