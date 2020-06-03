@@ -304,6 +304,11 @@
         <h4>Docker remove all images</h4>
         <h5>docker rmi -f $(docker images -a -q)</h5>
         <br>
+        <h4>docker-compose</h4>
+        <h5>sudo curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose</h5>
+        <h5>sudo chmod +x /usr/local/bin/docker-compose</h5>
+        <h5>docker-compose --version</h5>
+        <br>
         <h4>FolderPermissions</h4>
         <h5>sudo chmod -R 777 alpha-folder/</h5>
         <br>
