@@ -290,13 +290,17 @@
         <h5>docker push paulgass/repository_name:tag_name_for_hub</h5>
         <h5>docker pull paulgass/repository_name:tag_name_for_hub</h5>
         <br>
-        <h4>Enter Command inside of a Docker Container</h4>
-        <h5>docker exec -it <container name> <command></h5>
-        <h4>Enter Terminal inside of a Docker Container</h4>
-        <h5>docker exec -it <container name> /bin/bash</h5>
-        <br>
         <h4>Docker remove all images</h4>
         <h5>docker rmi -f $(docker images -a -q)</h5>
+        <br>
+        <h4>Enter Command inside of a Docker Container</h4>
+        <h5>docker exec -it container_name command_here</h5>
+        <h4>Enter Terminal inside of a Docker Container</h4>
+        <h5>docker exec -it container_name /bin/bash</h5>
+        <br>
+        <br>
+        <h4>docker</h4>
+        <h5>curl -sSL https://get.docker.com/ | sh</h5>
         <br>
         <h4>docker-compose</h4>
         <h5>sudo curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose</h5>
