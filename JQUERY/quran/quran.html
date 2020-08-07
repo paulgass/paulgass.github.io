@@ -9,7 +9,7 @@
 			$('#jsonTable').append("<tbody>");
 			for (var surah_number = 0; surah_number < json.length; surah_number++) {
                 for (var verse_number = 0; verse_number < json[surah_number].length; verse_number++) {
-                    $('#jsonTable').append("<tr><td>" + json[surah_number].surah_number + "</td><td>" + json[surah_number].verse_number + "</td><td>" + json[surah_number].text + "</td><td>" + json[surah_number].translation + "</td></tr>");
+                    $('#jsonTable').append("<tr><td>" + surah_number + "</td><td>" + json[surah_number].verse_number + "</td><td>" + json[surah_number].text + "</td><td>" + json[surah_number].translation + "</td></tr>");
                 }
             }
 			$('#jsonTable').append("</tbody>");
