@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript">
+	function hello() {
+		//
+		$.getJSON("english_quran.json", function(json) {
+			$('#jsonTable').css("visibility", "visible").css("border", "1px solid green");
+			$('#jsonTable').append("<tbody>");
+			for (var surah_number = 0; surah_number < json.length; surah_number++) {
+                for (var verse_number = 0; verse_number < json[surah_number].length; verse_number++) {
+                    $('#jsonTable').append("<tr><td>" + json[surah_number].surah_number + "</td><td>" + json[surah_number].verse_number + "</td><td>" + json[surah_number].text + "</td><td>" + json[surah_number].translation + "</td></tr>");
+                }
+            }
+			$('#jsonTable').append("</tbody>");
+			$('th').css("border", "1px solid green");
+		});
+	}
+</script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript"></script>
+</head>
+<body>
+	<input type="button" value="Render JSON" id="Render JSON" onclick="return hello();"/>
+	<br/>
+	<table id="jsonTable" style="visibility:hidden">
+		<thead>
+			<tr>
+				<!-- The JSON downloaded from the URL above provides four attributes.-->
+				<th>abbrev</th>
+				<th>name</th>
+				<th>chapter number</th>
+				<th>verse number</th>
+				<th>verse text</th>
+			</tr>
+		</thead>
+	</table>
+</body>
+</html>
