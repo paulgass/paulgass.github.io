@@ -11,3 +11,6 @@ table {
     width: 100%;
     table-layout: fixed;
 }
+td {
+    text-align: center;
+}
