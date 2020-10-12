@@ -2,6 +2,8 @@ img {
     height: auto !important;
     width: auto !important;
     max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 table {
