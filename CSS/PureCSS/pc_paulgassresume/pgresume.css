@@ -1,0 +1,10 @@
+img {
+    height: auto !important;
+    width: auto !important;
+    max-width: 100%;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
