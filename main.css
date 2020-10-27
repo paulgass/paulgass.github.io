@@ -14,5 +14,7 @@ table td img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 15px;
+}
+th, td {
+  padding: 15px;
 }
