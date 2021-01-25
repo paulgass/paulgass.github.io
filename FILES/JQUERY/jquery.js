@@ -6,7 +6,7 @@ $(document).ready(function(){
         var newHeading = "<h1>Hungry?</h1>";
         var newParagraph = document.createElement("p");
 		newParagraph.innerHTML = "<em>Bon appétit</em>";
-        var newImage = $('<img src="../FILES/IMAGES/shrimp.png" alt="Symbol">');
+        var newImage = $('<img src="FILES/IMAGES/shrimp.png" alt="Symbol">');
         $("#jQueryDivImageDisplay").append(newHeading, newParagraph, newImage);
     });
 });
