@@ -10,8 +10,200 @@ table {
     width: 100%;
     table-layout: fixed;
 }
-table td img{
+table td img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+/*Pay Accounts*/
+@media screen and (min-width: 901px) {
+  div.payaccounts {
+    font-size: 10px;
+  }
+  div.payaccounts th {
+    white-space: normal;
+  }
+  div.payaccounts td {
+    white-space: normal;
+  }
+}
+@media screen and (max-width: 900px) {
+  div.payaccounts {
+    font-size: 3px;
+  }
+  div.payaccounts th {
+    white-space: normal;
+  }
+  div.payaccounts td {
+    white-space: normal;
+  }
+}
+/*Cloud Companies*/
+@media screen and (min-width: 1001px) {
+  div.cloudcompanies {
+    font-size: 10px;
+  }
+  div.cloudcompanies th {
+    white-space: normal;
+  }
+  div.cloudcompanies td {
+    white-space: normal;
+  }
+}
+@media screen and (max-width: 1000px) {
+  div.cloudcompanies {
+    font-size: 3px;
+  }
+  div.cloudcompanies th {
+    white-space: normal;
+  }
+  div.cloudcompanies td {
+    white-space: normal;
+  }
+}
+/*Cloud Documentation*/
+@media screen and (min-width: 1251px) {
+  div.clouddocumentation th {
+    font-size: 4px;
+    white-space: nowrap;
+  }
+  div.clouddocumentation td {
+    font-size: 8px;
+    white-space: normal;
+  }
+}
+@media screen and (max-width: 1250px) {
+  div.clouddocumentation th {
+    font-size: 1px;
+    white-space: nowrap;
+  }
+  div.clouddocumentation td {
+    font-size: 3px;
+    white-space: normal;
+  }
+}
+/*Podcasts*/
+@media screen and (min-width: 1001px) {
+  div.podcasts {
+    font-size: 10px;
+  }
+  div.podcasts th {
+    white-space: normal;
+  }
+  div.podcasts td {
+    white-space: normal;
+  }
+}
+@media screen and (max-width: 1000px) {
+  div.podcasts {
+    font-size: 3px;
+  }
+  div.podcasts th {
+    white-space: normal;
+  }
+  div.podcasts td {
+    white-space: normal;
+  }
+}
+/*YouTube Channels*/
+@media screen and (min-width: 1251px) {
+  div.youtubechannels th {
+    font-size: 14px;
+    white-space: normal;
+  }
+  div.youtubechannels tbody tr:nth-child(odd) td{
+    font-size: 8px;
+    white-space: normal;
+  }
+  div.youtubechannels tbody tr:nth-child(even) td{
+    font-size: 3px;
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 1250px) {
+  div.youtubechannels th {
+    font-size: 4px;
+    white-space: normal;
+  }
+  div.youtubechannels tbody tr:nth-child(odd) td{
+    font-size: 4px;
+    white-space: normal;
+  }    
+  div.youtubechannels tbody tr:nth-child(even){
+    font-size: 1px;
+    white-space: nowrap;
+  }
+}
+/*Public Profiles*/
+@media screen and (min-width: 1651px) {
+  div.publicprofiles tbody tr:nth-child(odd) td{
+    font-size: 6px;
+    white-space: nowrap;
+  }
+  div.publicprofiles tbody tr:nth-child(even) td{
+    font-size: 16px;
+    white-space: normal;
+  }
+}
+@media screen and (max-width: 1650px) {
+  div.publicprofiles tbody tr:nth-child(odd) td{
+    font-size: 1px;
+    white-space: nowrap;
+  }    
+  div.publicprofiles tbody tr:nth-child(even){
+    font-size: 6px;
+    white-space: normal;
+  }
+}
+/*index1*/
+@media screen and (min-width: 601px) {
+  div.index1 td {
+    white-space: normal;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  div.index1 td {
+    white-space: normal;
+    font-size: 6px;
+  }
+}
+/*index2*/
+@media screen and (min-width: 1101px) {
+  div.index2 td {
+    white-space: normal;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  div.index2 td {
+    white-space: normal;
+    font-size: 4px;
+  }
+}
+/*index3*/
+@media screen and (min-width: 1251px) {
+  div.index3 td {
+    white-space: normal;
+    font-size: 7px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  div.index3 td {
+    white-space: normal;
+    font-size: 2px;
+  }
+}
+/*index4*/
+@media screen and (min-width: 1651px) {
+  div.index4 td {
+    white-space: normal;
+    font-size: 5px;
+  }
+}
+@media screen and (max-width: 1650px) {
+  div.index4 td {
+    white-space: normal;
+    font-size: 1px;
+  }
 }
